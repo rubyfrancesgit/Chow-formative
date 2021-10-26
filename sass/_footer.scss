@@ -1,0 +1,18 @@
+footer{
+    width: 100vw;
+    height: 8vh;
+    background: #E51B23;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+    padding-left: 35%;
+    padding-right: 35%;
+
+    &__img{
+        width: 25%;
+        height: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

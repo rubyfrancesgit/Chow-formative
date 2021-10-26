@@ -1,0 +1,190 @@
+.welcome-banner{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+
+    &__left{
+        width: 40%;
+        height: 100%;
+        @include center;
+    }
+
+    &__text{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    &__h2{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+
+    &__p{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        @include text;
+    }
+
+    &__button{
+        @include button;
+        padding: .5rem 1rem;
+    }
+
+    &__right{
+        width: 60%;
+        height: 100%;
+        @include center;
+    }
+
+    &__img{
+        width: 95%;
+        height: 90%;
+        background-image: url(../images/landingimg.png);
+        @include img;
+    }
+}
+
+.img-menu{
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    &__food{
+        @include img-menu;
+        @include center;
+        background-image: url(../images/food1.jpg);
+        @include img-menu-text;
+    }
+
+    &__drinks{
+        @include img-menu;
+        @include center;
+        background-image: url(../images/cocktails.jpg);
+        @include img-menu-text;
+    }
+
+    &__events{
+        @include img-menu;
+        @include center;
+        background-image: url(../images/event1.jpg);
+        @include img-menu-text;
+    }
+
+    &__contact{
+        @include img-menu;
+        @include center;
+        background-image: url(../images/restaurant1.jpg);
+        @include img-menu-text;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome-banner{
+        flex-direction: column-reverse;
+        height: 55vh;
+
+        &__left{
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__text{
+            width: 55ch;
+            align-items: center;
+        }
+
+        &__right{
+            width: 100vw;
+        }
+
+        &__img{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+        }
+    }
+
+    .img-menu{
+        width: 100vw;
+        height: 165vh;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &__food{
+            @include img-menu-mq-phone;
+        }
+
+        &__drinks{
+            @include img-menu-mq-phone;
+        }
+
+        &__events{
+            @include img-menu-mq-phone;
+        }
+
+        &__contact{
+            @include img-menu-mq-phone;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .welcome-banner{
+        flex-direction: column-reverse;
+        height: 55vh;
+
+        &__left{
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__text{
+            width: 55ch;
+            align-items: center;
+        }
+
+        &__right{
+            width: 100vw;
+        }
+
+        &__img{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+        }
+    }
+
+    .img-menu{
+        width: 100vw;
+        height: 80vh;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        &__food{
+            @include img-menu-mq-tablet;
+        }
+
+        &__drinks{
+            @include img-menu-mq-tablet;
+        }
+
+        &__events{
+            @include img-menu-mq-tablet;
+        }
+
+        &__contact{
+            @include img-menu-mq-tablet;
+        }
+    }
+}

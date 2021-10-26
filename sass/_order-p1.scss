@@ -1,0 +1,145 @@
+.order{
+    width: 100vw;
+    height: 45vh;
+    margin-top: 1.5rem;
+    @include center;
+
+    &__pick-up{
+        width: 22%;
+        height: 90%;
+        background-image: url(../images/curryimg.png);
+        color: #fff;
+        margin-right: 2rem;
+        @include img;
+        @include img-menu-text;
+        @include center;
+    }
+
+    &__h2{
+        text-align: center;
+    }
+
+    &__delivery{
+        width: 22%;
+        height: 90%;
+        background-image: url(../images/banana-leaf.png);
+        color: #fff;
+        margin-left: 2rem;
+        @include img;
+        @include img-menu-text;
+        @include center;
+    }
+}
+
+.vouchers-text{
+    width: 100vw;
+    height: 9vh;
+    @include center;
+
+        &__h3{
+        width: 20%;
+        height: 40%;
+        @include button;
+        padding: 1.5rem;
+    }
+}
+
+.v-div{
+    width: 100vw;
+    height: 66vh;
+    @include center;
+}
+
+.vouchers{
+    width: 35%;
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #bdbdbd;
+
+    &__div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        @include text;
+        padding: 2rem;
+        border-bottom: 1px dashed #bdbdbd;
+        padding-top: 2.5rem;
+    }
+
+    &__last-div{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2rem;
+        @include text;
+        padding: 2rem;
+        border: none;
+        border-style: none;
+    }
+
+    &__buy{
+        background: #1665C0;
+        color: #fff;
+        border-radius: 5px;
+        padding: 3.5px 7px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .order{
+        height: 35vh;
+
+        &__pick-up{
+            width: 40%;
+        }
+
+        &__delivery{
+            width: 40%;
+        }
+
+        &__h2{
+            font-size: 2.5rem;
+        }
+    }
+
+    .vouchers{
+        width: 80%;
+    }
+
+    .vouchers-text{
+        &__h3{
+            width: 35%;
+        }
+    }
+
+    .v-div{
+        height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .order{
+        &__pick-up{
+            width: 35%;
+        }
+
+        &__delivery{
+            width: 35%;
+        }
+    }
+
+    .vouchers{
+        width: 50%;
+    }
+
+    .vouchers-text{
+        &__h3{
+            width: 25%;
+        }
+    }
+}

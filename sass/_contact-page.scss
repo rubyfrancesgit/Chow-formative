@@ -1,0 +1,122 @@
+.contact-us{
+    width: 100vw;
+    height: 10vh;
+    @include center;
+
+    &__text{
+    width: 20%;
+    height: 40%;
+    @include button;
+    }
+
+    &__h2{
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+}
+
+.info{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+
+    &__left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-right: 2rem;
+    }
+
+    &__text{
+        width: 35ch;
+        @include text;
+    }
+
+    &__h2{
+        margin-top: .5rem;
+        @include white-button;
+        padding: .7rem;
+    }
+
+    &__p{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__button{
+        @include button;
+        margin-left: 5.5rem;
+        padding: .7rem;
+    }
+
+    &__right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+
+    &__right-text{
+    width: 35ch;
+    }
+}
+
+.map{
+    width: 100vw;
+    height: 57vh;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-us{
+        &__text{
+            width: 35%;
+        }
+    }
+    
+    .info{
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        &__left{
+            width: 100vw;
+            padding: 2rem;
+            @include center;
+        }
+
+        &__right{
+            width: 100vw;
+            padding: 2rem;
+            @include center;
+        }
+
+        &__p-1{
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .contact-us{
+        width: 100vw;
+
+        &__left{
+            width: 45%;
+            padding-left: 2rem;
+        }
+
+        &__right{
+            width: 45%;
+            padding-right: 2rem;
+        }
+    }
+}

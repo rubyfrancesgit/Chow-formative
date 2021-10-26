@@ -1,0 +1,151 @@
+.top-nav{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bdbdbd;
+    position: relative;
+    @include text;
+
+    &__logo{
+        width: 7rem;
+        height: auto;
+        padding-left: 2rem;
+    }
+
+    &__h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 3rem;
+        letter-spacing: .2rem;
+    }
+
+    &__ul{
+        list-style: none;
+        display: flex;
+        padding-right: 2rem;
+    }
+
+    &__li{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    &__menu{
+        // background: #E51B23;
+        color: #fff;
+    }
+
+    &__hamburger{
+        width: 3%;
+        height: auto;
+        display: none;
+    }
+
+    &__logo-a{
+        padding-top: .5rem;
+    }
+
+    &__red-square{
+        height: 100%;
+        width: 6rem;
+        background: #E51B23;
+        position: absolute;
+        top: 50%;
+        left: 96.4%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+}
+
+.toggle-nav{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .top-nav{
+        &__hamburger{
+            display: block;
+            margin-right: 2rem;
+            width: 4.5%;
+            height: auto;
+        }
+
+        &__ul{
+            display: none;
+        }
+        
+        &__red-square{
+            display: none;
+        }
+    }
+
+    .toggle-nav{
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #bdbdbd;
+        @include text;
+    
+        &__ul{
+            width: 100%;
+            padding-left: 2rem;
+            list-style: none;
+            display: flex;
+            padding-right: 2rem;
+            justify-content: space-between;
+        }
+    
+        &__li{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .top-nav{
+        &__hamburger{
+            display: block;
+            margin-right: 2rem;
+        }
+
+        &__ul{
+            display: none;
+        }
+
+        &__red-square{
+            display: none;
+        }
+    }
+
+    .toggle-nav{
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #bdbdbd;
+        @include text;
+    
+        &__ul{
+            width: 100%;
+            padding-left: 2rem;
+            list-style: none;
+            display: flex;
+            padding-right: 2rem;
+            justify-content: space-between;
+        }
+    
+        &__li{
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+@mixin text {
+    font-family: $text-font;
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+@mixin img-menu-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin img-menu {
+    width: 23%;
+    height: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    color: #fff;
+}
+
+@mixin img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+@mixin button {
+    @include center;
+    border-radius: 5px;
+    background: #E51B23;
+    color: #fff;
+    @include text;
+    padding: 1rem;
+    border: none;
+}
+
+@mixin white-button {
+    background: #fff;
+    border: 1px solid #bdbdbd;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    @include text;
+}
+
+@mixin img-menu-mq-phone {
+    width: 55%;
+    height: 20%;
+    margin-bottom: 2rem;
+}
+
+@mixin img-menu-mq-tablet {
+    width: 40%;
+    height: 45%;
+}
