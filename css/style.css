@@ -402,7 +402,8 @@ a:visited {
   width: 100vw;
   height: 57vh;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  margin-bottom: 5rem; }
 
 @media only screen and (max-width: 600px) {
   .contact-us__text {
